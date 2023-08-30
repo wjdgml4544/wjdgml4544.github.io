@@ -18,6 +18,9 @@
     --color-blue: #03e8f9;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+
+    /* size */
+    --size-max-width: 1200px;
 }
 
 
@@ -65,6 +68,10 @@ button:hover{
     text-align: center;
 }
 
+.max-container{
+    max-width: var(--size-max-width);
+    margin: auto;
+}
 
 .title{
     font-size: 2.5rem;
@@ -173,4 +180,65 @@ button:hover{
     background-color: transparent;
     outline: 1px solid var(--color-accent);
     color: var(--color-text);
+}
+
+
+/* about */
+
+.majors{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+    gap: 1rem;
+}
+
+.major{
+    color: var(--color-text);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: var(--color-primary-variant);
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.major__icons{
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
+
+.major__title{
+    
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.major:hover .major__icons{
+    
+    transform: rotate(-15deg) scale(1);
+}
+
+.major__title{
+    font-size: 1rem;
+}
+
+
+.job{
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.job__name{
+    color: var(--color-primary-variant);
+}
+
+.job__period{
+    font-size: 0.8rem;
+    color: var(--color-primary-variant);
 }
