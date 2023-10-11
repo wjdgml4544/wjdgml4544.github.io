@@ -19,8 +19,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript -->
-    <script type="module" src="main.js" defer></script>
-    <script type="module" src="src/projects.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="projects.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -176,30 +176,30 @@
             <p class="description">projects</p>
             <ul class="categories">
                 <li>
-                    <button class="category category--selected">
+                    <button class="category category--selected" date-category="all">
                         All<span class="category__count">8</span>
                     </button>
                 </li>
                 <li>
-                    <button class="category">
-                        Front-end<span class="category__count">3</span>
+                    <button class="category" date-category="front-end">
+                        Front-end<span class="category__count">4</span>
                     </button>
                 </li>
                 <li>
-                    <button class="category">
-                        design<span class="category__count">5</span>
+                    <button class="category" date-category="design">
+                        design<span class="category__count">4</span>
                     </button>
                 </li>
             </ul>
             <ul class="projects">
-                <li class="project">
+                <li class="project" date-type="front-end">
                     <a href="#" target="_blank"><img src="./image/project1.jpg" alt="project1" class="project__img">
                     <div class="project__metadate">
                         <h3 class="project__title">Youtube Site</h3>
                         <span>Clone coding with HTML and CSS</span>
                     </div></a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./image/project2.jpg" alt="project2" class="project__img">
                         <div class="project__metadate">
@@ -208,7 +208,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./image/project3.jpg" alt="project3" class="project__img">
                         <div class="project__metadate">
@@ -217,7 +217,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./image/project4.jpg" alt="project4" class="project__img">
                         <div class="project__metadate">
@@ -226,7 +226,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="design">
                     <a href="#" target="_blank">
                         <img src="./image/project5.jpg" alt="project5" class="project__img">
                         <div class="project__metadate">
@@ -235,7 +235,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="design">
                     <a href="#" target="_blank">
                         <img src="./image/project6.jpg" alt="project6" class="project__img">
                         <div class="project__metadate">
@@ -244,7 +244,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="design">
                     <a href="#" target="_blank">
                         <img src="./image/project7.jpg" alt="project7" class="project__img">
                         <div class="project__metadate">
@@ -253,7 +253,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" date-type="design">
                     <a href="#" target="_blank">
                         <img src="./image/project8.jpg" alt="project8" class="project__img">
                         <div class="project__metadate">
